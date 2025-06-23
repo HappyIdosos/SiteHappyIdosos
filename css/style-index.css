@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #244a96;
+  text-decoration: none;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin-right: 10px;
+}
+
+
+.btn-primary {
+    background: #0d6efd;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    background: #244a96;
+    color: white;
+    padding: 60px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-buttons a {
+    margin-right: 15px;
+}
+
+.btn-secondary {
+    background: white;
+    color: #244a96;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+/* Como Funciona */
+.como-funciona {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.como-funciona h2 {
+    color: #244a96;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    max-width: 300px;
+}
+
+.card img {
+    margin-bottom: 15px;
+}
+
+/* Benefícios */
+.beneficios {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.beneficios h2 {
+    color: #244a96;
+    margin-bottom: 40px;
+}
+
+.beneficios-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+}
+
+.beneficio ul {
+    padding-left: 20px;
+}
+
+/* CTA */
+.cta {
+    background: #244a96;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.cta-buttons a {
+    margin: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #eee;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}

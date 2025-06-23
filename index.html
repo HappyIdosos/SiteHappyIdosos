@@ -1,33 +1,109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Idosos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style-index.css" />
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg shadow-sm">
+  <header class="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="happy idosos.png" alt="Logo Happy Idosos" width="50" height="50" class="d-inline-block align-text-top">
-      </a>
-      <div class="ms-auto">
-        <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
-        <a href="cadastro.html" class="btn btn-custom">Cadastro</a>
+      <h1 class="logo"> <img src="img/happyidosos.png" alt="Logo Happy Idosos"/> Happy Idosos</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Buscar Asilos</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <a href="#" class="btn-primary">Participar</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Conectando Voluntários e Idosos</h2>
+        <p>O projeto Happy Idosos facilita o acesso entre voluntários e entidades que cuidam de idosos, promovendo a
+          visibilidade e participação ativa dos idosos na sociedade.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-secondary">Encontrar Asilos</a>
+          <a href="#" class="btn-outline">Ver eventos</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://via.placeholder.com/400x250.png?text=Ilustração+Figma" alt="Ilustração Happy Idosos" />
       </div>
     </div>
-  </nav>
+  </section>
 
-  <main class="container text-center mt-5">
-    <h2>Bem-vindo ao nosso espaço</h2>
-    <p class="lead">Promovendo qualidade de vida e bem-estar na melhor idade.</p>
-  </main>
+  <section class="como-funciona">
+    <div class="container">
+      <h2>Como Funciona</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/64" alt="Ícone 1">
+          <h3>Encontre Asilos</h3>
+          <p>Busque por casas de repouso e centros de atividades para idosos próximos a você.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/64" alt="Ícone 2">
+          <h3>Participe de Eventos</h3>
+          <p>Inscreva-se em eventos organizados pelas instituições e compartilhe seus talentos.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/64" alt="Ícone 3">
+          <h3>Faça a Diferença</h3>
+          <p>Crie conexões significativas e troque experiências valiosas com os idosos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer class="text-center mt-5 p-3">
-    <p>© 2025 Happy Idosos</p>
+  <section class="beneficios">
+    <div class="container">
+      <h2>Benefícios</h2>
+      <div class="beneficios-content">
+        <div class="beneficio">
+          <h3>Para os Idosos</h3>
+          <ul>
+            <li>Maior interação social e redução da solidão</li>
+            <li>Acesso a atividades culturais e recreativas</li>
+            <li>Oportunidade de compartilhar conhecimentos e experiências</li>
+          </ul>
+        </div>
+        <div class="beneficio">
+          <h3>Para os Voluntários</h3>
+          <ul>
+            <li>Experiência enriquecedora de troca intergeracional</li>
+            <li>Oportunidade de desenvolver habilidades sociais e empáticas</li>
+            <li>Satisfação pessoal por contribuir com uma causa social</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Junte-se a Nós</h2>
+      <p>Faça parte dessa iniciativa e ajude a transformar a vida dos idosos.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn-secondary">Encontrar Asilos</a>
+        <a href="#" class="btn-outline">Contate-nos</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p> Happy Idosos &copy; 2025. Todos os direitos reservados.</p>
+    </div>
   </footer>
 </body>
+
 </html>
