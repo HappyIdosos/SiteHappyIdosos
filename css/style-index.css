@@ -42,7 +42,7 @@ body {
 
 .logo img {
     height: 60px;
-    margin-right: 12px;
+    margin-right: 5px;
 }
 
 /* Navegação */
@@ -328,17 +328,17 @@ nav {
 }
 
 .integrantes-img-wrapper {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .integrantes-img-wrapper img {
-  width: 50%;
-  max-width: 700px;
-  height: auto;
-  border: 8px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  object-fit: cover;
+    width: 50%;
+    max-width: 700px;
+    height: auto;
+    border: 8px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }

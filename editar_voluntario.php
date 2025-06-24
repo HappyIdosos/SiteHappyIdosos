@@ -13,7 +13,7 @@
         <img src="img/happyidosos.png" alt="Happy Idosos">
         <span>Happy Idosos</span>
     </div>
-    <a href="index.html" class="voltar">Voltar ➝</a>
+    <a href="index.php" class="voltar">Voltar ➝</a>
 </header>
 
 <section class="hero">
