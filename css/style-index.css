@@ -1,3 +1,4 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ body {
     margin: 0 auto;
 }
 
-/* Navbar */
+/* NAVBAR */
 .navbar {
     background: #fff;
     padding: 20px 0;
@@ -27,6 +28,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #244a96;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 12px;
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .nav-links {
@@ -39,36 +63,25 @@ body {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    padding: 8px 10px;
+    transition: color 0.2s ease;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #244a96;
-  text-decoration: none;
-  max-height: 90px;
-  overflow: hidden;
+.nav-links a:hover {
+    color: #0d6efd;
 }
-
-.logo img {
-  height: 80px;
-  width: auto;
-  display: block;
-  margin-right: 10px;
-}
-
 
 .btn-primary {
     background: #0d6efd;
     color: white;
-    padding: 8px 16px;
+    padding: 10px 18px;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 0.95rem;
+    white-space: nowrap;
 }
 
-/* Hero */
+/* HERO */
 .hero {
     background: #244a96;
     color: white;
@@ -80,6 +93,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .hero-text h2 {
@@ -87,29 +101,33 @@ body {
     margin-bottom: 20px;
 }
 
-.hero-buttons a {
-    margin-right: 15px;
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-secondary,
+.btn-outline {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .btn-secondary {
     background: white;
     color: #244a96;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 5px;
 }
 
 .btn-outline {
     border: 2px solid white;
-    padding: 10px 20px;
     color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 5px;
+    background: transparent;
 }
 
-/* Como Funciona */
+/* COMO FUNCIONA */
 .como-funciona {
     padding: 60px 0;
     text-align: center;
@@ -124,6 +142,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -134,7 +153,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Benefícios */
+/* BENEFÍCIOS */
 .beneficios {
     background: #f4f4f4;
     padding: 60px 0;
@@ -151,6 +170,7 @@ body {
     justify-content: space-between;
     text-align: left;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .beneficio ul {
@@ -165,14 +185,160 @@ body {
     text-align: center;
 }
 
-.cta-buttons a {
-    margin: 10px;
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
     background: #eee;
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+    .navbar .container,
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-content,
+    .beneficios-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons,
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* INTEGRANTES */
+    .integrantes {
+        background: #f4f4f4;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .integrantes h2 {
+        color: #244a96;
+        margin-bottom: 40px;
+    }
+
+    .integrantes-content {
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+    .grupo h3 {
+        color: #112a63;
+        margin-bottom: 10px;
+    }
+
+    .grupo ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .grupo li {
+        margin-bottom: 6px;
+        color: #333;
+    }
+
+}
+
+/* HISTÓRIA */
+.historia {
+    background: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.historia h2 {
+    color: #244a96;
+    margin-bottom: 20px;
+}
+
+.historia p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* INTEGRANTES */
+.integrantes {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.integrantes h2 {
+    color: #244a96;
+    margin-bottom: 40px;
+}
+
+.integrantes-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.grupo h3 {
+    color: #112a63;
+    margin-bottom: 10px;
+}
+
+.grupo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.grupo li {
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.integrantes-img-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.integrantes-img-wrapper img {
+  width: 50%;
+  max-width: 700px;
+  height: auto;
+  border: 8px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
