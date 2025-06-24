@@ -129,7 +129,7 @@
 <section class="cta">
   <div class="container">
     <h2>Junte-se a Nós</h2>
-    <p>Faça parte dessa iniciativa e ajude a transformar a vida dos idosos.</p>
+    <p>Faça parte dessa iniciativa e nos ajude a transformar a vida dos idosos.</p>
     <div class="cta-buttons">
       <a href="buscarasilo.php" class="btn-secondary">Encontrar Asilos</a>
       <a href="contato.php" class="btn-outline">Contate-nos</a>
